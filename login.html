@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Login</title>
+    <link rel="stylesheet" href="./assests/css/login_style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="form-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="userType">Select User:</label>
+                    <select id="userType" name="userType" required>
+                        <option value="">-- Select User --</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Patient">Patient</option>
+                        <option value="Receptionist">Receptionist</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+
+            <div class="register-section">
+                <p>New here? <a href="./registration.html" class="register-link">Register</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assests/js/login_script.js"></script>
+</body>
+</html>
